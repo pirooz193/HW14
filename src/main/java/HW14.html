@@ -17,10 +17,10 @@
             color: whitesmoke;
         }
 
-        div {
+        /*div {
             color: blue;
             font-size: 13px;
-        }
+        }*/
 
         .topnav {
             overflow: hidden;
@@ -45,8 +45,7 @@
         nav {
             float: left;
             width: 15%;
-            /*overflow: -webkit-marquee;*/
-            /*height: 1000px;*/
+            height: 600px;
             background: Azure;
             padding: 5px;
         }
@@ -59,18 +58,25 @@
         article {
             background-color: Azure;
         }
+
+        .warning {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+            margin-right: 50px;
+        }
     </style>
 
 </head>
 <body>
 <header>
     <div style="color: whitesmoke;font-size: 30px">MaktabHomeWork14.ir<br>
-        <div style="font-size: 15px;color: whitesmoke">Just little fun</div>
-    </div>
-    <div align="right">
-        <form>
-            <input type="search"> <input type="submit" name="click" value="click">
-        </form>
+        <div style="font-size: 15px;color: whitesmoke">Just little fun
+            <div align="right" style ="padding-bottom: 30px">
+                <form >
+                    <input type="search" > <input type="submit" name="click" value="click">
+                </form>
+            </div>
+        </div>
     </div>
 
 
@@ -85,30 +91,28 @@
 </topnav>
 <section>
     <nav>
-        <label>Markup
+        <div style="color: blue;
+            font-size: 13px;">
+            <label>Markup</label>
             <div>First webpage guide<br>HTML</div>
-        </label>
-        <br>
-        <label>Style and layot
+            <br>
+            <label>Style and layot</label>
             <div>CSS</div>
-        </label>
-        <br>
-        <label>Browser Scripting
+            <br>
+            <label>Browser Scripting</label>
             <div>Java Script<br>AJAX<br>VBscript</div>
-        </label>
-        <br>
-        <label>Server Scripting
+            <br>
+            <label>Server Scripting</label>
             <div>PHP<br>ASP</div>
-        </label>
-        <br>
-        <label>Web planning
+            <br>
+            <label>Web planning</label>
             <div>PHP<br>ASP</div>
             <div>RSS</div>
-        </label>
-        <br>
-        <label>Web Mechanics
+            <br>
+            <label>Web Mechanics</label>
             <div>Debugging</div>
-        </label>
+        </div>
+
     </nav>
 </section>
 
@@ -116,26 +120,37 @@
 <article>
     <br>
     <br>
-    <h1 style="background-color: lightgrey">HTML exercises</h1>
-    <p>HTML lists allow web developers to group a set of related items in lists.</p>
-    <h4>Jump to :</h4>
-    <a href="#Basics">Basics |</a><a href="#Text"> Text |</a><a href="#Text formatting"> text formatting |</a>
-    <a href="#Links"> Links |</a><a href="#Images"> Images |</a>
-    <h1 style="background-color: navajowhite ;color: midnightblue">HTML basics exercises</h1>
-    <ul>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-        <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
-        <br>
-    </ul>
+    <h1 style="background-color: lightgrey;font-family: ArialBlack, Gadget, sans-serif">HTML exercises</h1>
+    <div>
+        <p>HTML lists allow web developers to group a set of related items in lists.</p>
+        <h4 style="font-family: Alatsi">Jump to :</h4>
+        <a href="#Basics">Basics |</a><a href="#Text"> Text |</a><a href="#Text formatting"> text formatting |</a>
+        <a href="#Links"> Links |</a><a href="#Images"> Images |</a>
+
+        <dl>
+            <dt><h1 style="background-color: navajowhite ;color:
+            midnightblue;font-family:ArialBlack, Gadget, sans-serif ">
+                HTML
+                basics exercises</h1></dt>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+            <li>lists allow web developers to group a set of related items in lists.[<a href="#Link">Link</a>]</li>
+            <br>
+        </dl>
+
+        <div class="warning">
+            <p><strong>Warning!</strong> Some text...</p>
+        </div>
+    </div>
+
 
 </article>
 <footer></footer>
